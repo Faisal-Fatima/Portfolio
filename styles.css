@@ -89,7 +89,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 75vh;
+  height: 100vh;
   background-color:#dcdcdc;
   background-size:cover;
   background-position: center;
@@ -145,6 +145,7 @@ body {
     box-shadow: inset 1px 1px 1px 1px;
   }
   #name, #email, #topic, #comments{
+    display:block;
     min-width: 30%;
     padding: 10px;
     margin-bottom:10px;
