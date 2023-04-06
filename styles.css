@@ -63,7 +63,7 @@ body {
     margin:0;
     padding-top: .3em;
     padding-left:0.5em;
-    padding-bottom: .2em;
+    padding-bottom: 1em;
     display:block;
     text-decoration:none;
     color:inherit;
@@ -223,7 +223,7 @@ a:focus{
 
     .menu a{
       font-size: 0.5em;
-      padding-bottom: 0.3em;
+      padding-bottom: 1.3em;
 
     }
   }
@@ -238,7 +238,7 @@ a:focus{
     .menu a{
 
       font-size: 0.6em;
-      padding-bottom: 0.4em;
+      padding-bottom: 1.4em;
     }
     
   }
@@ -258,7 +258,7 @@ a:focus{
     .menu a{
 
       font-size: 0.6em;
-      padding-bottom: 0.4em;
+      padding-bottom: 1.4em;
     }
     
     .main-wrapper,
