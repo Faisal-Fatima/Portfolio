@@ -1,0 +1,278 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+html{
+
+  font-size: calc(15px + 0.390625vw);
+ }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #dcdcdc;
+  }
+
+.navbar{
+   max-width: 15%;
+   position:fixed;
+   margin:0px;
+   padding:0;
+   z-index:300;
+   overflow: auto;
+   
+}
+  
+.navbar img{
+  
+  padding:0;
+  max-width: 100%;
+  object-fit:contain;
+}
+ 
+  /* SHOW HAMBURGER ICON */
+  .navbar label { 
+    display: inline-block; 
+    color: black;
+    background: #007b7d;
+    font-style: normal;
+    font-size: 1em;
+    padding: .3em;
+    margin-top: 1em;
+    
+  }
+
+  /* TOGGLE SHOW/HIDE MENU */
+  .menu 
+  { 
+    display:  none; }
+
+  .navbar input:checked ~ .menu 
+  
+  { 
+    display: block; }
+  #hamburger
+  { 
+    display: none; }
+
+.navbar li {
+    list-style-type: none;
+    
+}
+  .menu a{
+    margin:0;
+    padding-top: .3em;
+    padding-left:0.5em;
+    padding-bottom: .2em;
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    font-size: .4em;
+    font-weight: bold;
+  
+} 
+   
+
+.main-wrapper{
+    min-height:100%;
+    max-height:100%;
+    position:relative;
+
+    margin-left: 15%;
+    z-index:1;
+}
+.welcome{
+  background-image:url("OIP2.jpg");
+  display:flex;
+  flex-direction:column;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75vh;
+  background-color:#dcdcdc;
+  background-size:cover;
+  background-position: center;
+}
+.welcome h1{
+  text-align:center;
+  font-size: 1em;
+  font-weight:lighter;
+}
+.welcome p,
+.project-style p{
+  padding-top: 10px;
+  text-align:center;
+  font-size: 0.75em;
+  
+}
+
+
+
+.project-style{
+  padding-top:20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+  max-width: 1500px;
+ }
+.project-style img{
+  width: 100%;
+  object-fit:cover;
+
+}
+.project-style p{
+  font-size:1em;
+}
+
+.enquiry h3{
+    margin-top: 10%; 
+    text-align: center;
+    font-size:0.8em; 
+}
+
+#enquiry-form{
+ 
+    color:#007b7d;
+    border:solid;
+    width:70%;
+    margin:0 auto;
+    margin-bottom: 15px;
+    padding:10px;
+    text-align:left;
+    font-size: 0.6em;
+    box-shadow: inset 1px 1px 1px 1px;
+  }
+  #name, #email, #topic, #comments{
+    min-width: 30%;
+    padding: 10px;
+    margin-bottom:10px;
+    
+  }
+  #comments{
+    width:100%;
+  }
+  #submit{
+    background-color:#007b7d;
+    width: 30%;
+    
+}
+
+  
+  
+.about,
+.scheme{
+max-width: 85%;
+float:right;
+padding-top:5%;
+padding-right:5%;
+padding-left: 2%;
+z-index: 1;
+}
+
+.about h2,
+.scheme h2{
+ font-size: 0.9em;
+ margin-bottom: 0.5em;
+}
+
+.about p,
+.scheme p,
+.scheme li{
+  padding-bottom: 2%;
+  font-size: 0.7em;
+  list-style: circle;
+}
+a{
+  display: inline;
+  text-decoration:none;
+  color:inherit;
+  font-size: 1em;
+    }
+
+a:hover,
+a:focus{
+    color:#007b7d;
+  }
+
+
+  .footer{
+    background:#007b7d;
+    text-align:center;
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:black;
+    font-size:0.8em;
+    }
+    
+    .footer a{
+      padding: .5em; 
+      text-decoration:none;
+      color:black;
+      transition:0.5s;
+    }
+    
+    .footer a:hover{
+      color:#fff;
+    }
+
+  @media screen and (min-width:576px) and (max-width: 767px){
+
+    .menu a{
+      font-size: 0.5em;
+      padding-bottom: 0.3em;
+
+    }
+  }
+  @media(min-width:768px)and (max-width:991px){
+     .ham,
+     .navbar label{
+      display: none;
+    }
+    .menu{
+      display: block;
+    }
+    .menu a{
+
+      font-size: 0.6em;
+      padding-bottom: 0.4em;
+    }
+    
+  }
+  @media(min-width:992px){
+
+    .navbar{
+      max-width: 10%;
+    
+    }
+    .ham,
+    .navbar label{
+      display: none;
+    }
+    .menu{
+      display: block;
+    }
+    .menu a{
+
+      font-size: 0.6em;
+      padding-bottom: 0.4em;
+    }
+    
+    .main-wrapper,
+    .about,
+    .scheme{
+      margin-left: 10%;
+
+      }
+    .about,
+    .scheme{
+      padding-left: 0.1%;
+
+    }
+  }
+  
+
+
+  
