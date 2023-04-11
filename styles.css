@@ -97,7 +97,7 @@ body {
 }
 .welcome h1{
   text-align:center;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight:bolder;
 }
 .welcome p,
@@ -157,7 +157,8 @@ body {
   }
   #submit{
     background-color:#007b7d;
-    width: 30%;
+    width: 25%;
+    font-size: 1.25em;
     
 }
 
@@ -243,7 +244,12 @@ a:focus{
       font-size: 0.6em;
       padding-bottom: 1.4em;
     }
-    
+    .welcome h1{
+      font-size: 2em;
+    }
+    .welcome p{
+      font-size: 0.85em;
+    }
   }
   @media(min-width:992px){
 
@@ -268,7 +274,13 @@ a:focus{
     .about,
     .scheme{
       margin-left: 10%;
-
+    }
+    
+    .welcome h1{
+        font-size: 2.5em;
+      }
+      .welcome p{
+        font-size: 1em;
       }
     .about,
     .scheme{
