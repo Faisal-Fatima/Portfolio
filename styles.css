@@ -59,7 +59,8 @@ body {
     list-style-type: none;
     
 }
-  .menu a{
+  .menu a,
+  .back{
     margin:0;
     padding-top: .3em;
     padding-left:0.5em;
@@ -197,7 +198,9 @@ a:focus{
     color:#007b7d;
   }
 
-
+.back{
+  text-align: center;
+}
   .footer{
     background:#007b7d;
     text-align:center;
