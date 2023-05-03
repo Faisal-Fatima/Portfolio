@@ -3,15 +3,29 @@
   padding-top: 1.5em;
   text-align: center;
   color: $font-main;
+  
+  
 }
 .pic-ctn {
+  position: relative;
+  height: 300px;
+  margin-top: 3em;
   
-  height: 200px;
+ 
 }
 
+
+
+.pic-ctn > img {  
+  position: absolute;
+  top: 0;
+  left: calc(50% - 70px);
+  opacity: 0;
+  animation: display 8s infinite;
+}
 @keyframes display {
   0% {
-    transform: translateX(200px);
+    transform: translateX(50%);
     opacity: 0;
   }
   10% {
@@ -23,27 +37,13 @@
     opacity: 1;
   }
   30% {
-    transform: translateX(-200px);
+    transform: translateX(-20%);
     opacity: 0;
   }
   100% {
-    transform: translateX(-200px);
+    transform: translateX(-50%);
     opacity: 0;
   }
-}
-
-.pic-ctn {
-  position: relative;
-  height: 300px;
-  margin-top: 3em;
-}
-
-.pic-ctn > img {  
-  position: absolute;
-  top: 0;
-  left: calc(50% - 100px);
-  opacity: 0;
-  animation: display 10s infinite;
 }
 
 img:nth-child(2) {
@@ -55,7 +55,5 @@ img:nth-child(3) {
 img:nth-child(4) {
   animation-delay: 6s;
 }
-img:nth-child(5) {
-  animation-delay: 8s;
-}
+
 

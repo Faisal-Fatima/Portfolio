@@ -1,5 +1,5 @@
 .enquiry h3{
-  color: $font;
+    color: $font;
     margin-top: 5em; 
     text-align: center;
     font-size:0.8em; 
@@ -16,6 +16,7 @@
     text-align:left;
     font-size: 0.6em;
     box-shadow: inset 9px 8px 10px -10px $design ;
+    
   }
 
   
@@ -28,6 +29,7 @@
     user-select: none;
     border: 2px solid $a-focus;
     border-radius:10px;
+    background-color: antiquewhite;
   }
 
   #comments{
