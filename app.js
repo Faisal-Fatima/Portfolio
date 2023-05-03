@@ -24,7 +24,7 @@ function validateForm() {
   let phone = document.getElementById("phone").value;
   let comments = document.getElementById("comments").value;
   if (name == "" || email == "" || phone == "") {
-    alert("Please fill in the details");
+    alert("Fields mark with * are compulsory");
     return false;
   }
  
