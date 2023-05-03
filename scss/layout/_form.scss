@@ -1,0 +1,46 @@
+.enquiry h3{
+  color: $font;
+    margin-top: 5em; 
+    text-align: center;
+    font-size:0.8em; 
+}
+
+#enquiry-form{
+ 
+     
+    border: 3px solid $design;
+    width:70%;
+    margin:0 auto;
+    margin-bottom: 15px;
+    padding:10px;
+    text-align:left;
+    font-size: 0.6em;
+    box-shadow: inset 9px 8px 10px -10px $design ;
+  }
+
+  
+  #name, #email, #phone, #comments{
+    display:block;
+    min-width: 30%;
+    padding: 10px;
+    margin: 5px 0;
+    outline: none;
+    user-select: none;
+    border: 2px solid $a-focus;
+    border-radius:10px;
+  }
+
+  #comments{
+    width:100%;
+    resize: vertical;
+  }
+
+  #submit{
+    background-color:$a-focus;
+    width: 70px;
+    display: block;
+    font-size: 1.25em;
+    padding: 5px;
+    margin: 0 auto;
+    
+}

@@ -1,0 +1,21 @@
+.footer{
+    background: $font;
+    text-align:center;
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:black;
+    font-size:0.8em;
+    
+  }
+    .footer a{
+      padding: .5em; 
+      text-decoration:none;
+      color: $design;
+      transition:0.5s;
+    
+    }
+    .footer a:hover{
+      color:$font;
+    }
+  

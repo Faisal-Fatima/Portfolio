@@ -1,0 +1,85 @@
+.welcome{
+    background-image:url("../back1.jpg");
+    display:flex;
+    flex-direction:column;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: $background;
+    background-size : cover;
+    background-position: center;
+    flex: 1;
+    color: $font-main;
+    font-weight: bolder;
+  }
+  .welcome h1{
+   padding-top: 2em;
+    text-align:center;
+    font-size: 1.5em;
+    font-weight:bolder;
+    z-index: 2;
+    
+  
+  }
+  
+  .welcome p,
+  .project-style p{
+    
+    padding-top: 10px;
+    text-align: center;
+    font-size: 0.75em;
+    font-weight: 600;
+    font-style: italic;
+    flex:1;
+    }
+    
+    .welcome p::after {
+      content: "|";
+      animation: blink 1s infinite;
+    }
+    
+    @keyframes blink {
+      0%, 100%{
+        opacity: 0;
+      }
+      50%{
+        opacity: 0.5;
+      }
+      
+    }
+    
+    
+    .scroll a {
+      color: $font-main;
+      position: absolute;
+      bottom: 1em;
+      z-index: 2;
+      display: inline-block;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      letter-spacing: .1em;
+      text-decoration: none;
+      transition: opacity .3s;
+      padding-top: 2em;
+    }
+    .scroll a:hover {
+      opacity: .5;
+    }
+   
+    .scroll a span {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 24px;
+      height: 24px;
+      margin-left: -12px;
+      border-left: 1px solid $font-main;
+      border-bottom: 1px solid $font-main;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+     
+    }
+    
+    
