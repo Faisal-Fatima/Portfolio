@@ -1,0 +1,24 @@
+.about,
+.scheme {
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 2%;
+}
+
+.about h2,
+.scheme h2 {
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+
+.about p,
+.scheme p,
+.scheme li {
+  padding-bottom: 2%;
+  font-size: 0.7em;
+  list-style: circle;
+}
+
+.back {
+  text-align: center;
+}/*# sourceMappingURL=pages.css.map */

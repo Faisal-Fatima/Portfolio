@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> 
+<html lang="en"> 
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,9 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="normalize.css">
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="scss/applications.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+      
     
       <title>Portfolio</title>
  </head>
@@ -18,11 +18,20 @@
   <body>
 
     <div class="navbar">
-
-      <header><a href="index.html"><img src="Fatima.png" alt="Name initial logo"></a>
+     
+      <header>
+        
+        
+        <img id="logo" src="Fatima.png" alt="Name initial logo">
+      
+      
         <nav>
-          <label class= "ham" for="hamburger">&#9776;</label>
-          <input type="checkbox" id="hamburger">
+          <div class="hamburger-menu">
+            <div class="ham-bar bar-top"></div>
+            <div class="ham-bar bar-mid"></div>
+            <div class="ham-bar bar-bottom"></div>
+         </div>
+          
           <ul class="menu"> 
               <li> <a href="About-Me.html" target="_self">About Me</a></li>
               <li> <a href="index.html#portfolio">My Portfolio</a></li>
@@ -34,23 +43,37 @@
     </div>
 
     <main>
+      
+
         <div class="main-wrapper">
           <section class="welcome">
-            <h1>I am Fatima Faisal</h1><br>
-            <p><b><i> Web Developer in Training!</i></p>
-          </section>
-        
+            
+            <h1>I am Fatima Faisal</h1>
+            <p id ="intro"></p>
+           
+            <section class="scroll">
+              <a href="#portfolio"><span></span>Scroll</a>
+            </section>
+         
+      </div>
 
-          <div class="project-style" id="portfolio">
-            <a href="_blank" class="project-tile" target="_blank"><img src="Project.jpg" alt="dark wall with glowing lamp and coming soon text"> <p>Project One</p></a>
-            <a href="_blank" class="project-tile" target="_blank"><img src="Project.jpg" alt="dark wall with glowing lamp and coming soon text"> <p>Project Two</p></a>
-            <a href="_blank" class="project-tile" target="_blank"><img src="Project.jpg" alt="dark wall with glowing lamp and coming soon text"> <p>Project Three</p></a>
-            <a href="_blank" class="project-tile" target="_blank"><img src="Project.jpg" alt="dark wall with glowing lamp and coming soon text"> <p>Project Four</p></a>
-            <a href="_blank" class="project-tile" target="_blank"><img src="Project.jpg" alt="dark wall with glowing lamp and coming soon text"> <p>Project Five</p></a>
-            <a href="_blank" class="project-tile" target="_blank"><img src="Project.jpg" alt="dark wall with glowing lamp and coming soon text"> <p>Project Six</p></a>  
+          <div id="portfolio">
 
+            <h2 class="projects"> Projects</h2>
+
+             <div class="pic-ctn" >
+            
+                <img src="Project1.jpg" alt="dark wall with glowing lamp and coming soon text" class="pic">
+                <img src="Project1.jpg" alt="dark wall with glowing lamp and coming soon text" class="pic">
+                <img src="Project.jpg" alt="dark wall with glowing lamp and coming soon text" class="pic">
+                <img src="Project.jpg" alt="dark wall with glowing lamp and coming soon text" class="pic">
+                <img src="Project.jpg" alt="dark wall with glowing lamp and coming soon text" class="pic">
+              </div>
+         
           </div>
-
+        
+       
+          
           <div class="enquiry" id="contact">
 
             <h3>Please fill in the details for any enquiries</h3>
@@ -59,13 +82,13 @@
         
 
               <label for="name">Name:</label>
-              <input id="name" type="text" name="user_name"placeholder="Enter your Name" required><br>
+              <input id="name" type="text" name="user_name"placeholder="Enter your Name" ><br>
               
               <label for="email">Email:</label>
-              <input id="email" type="email" name="user_email" placeholder="Enter your Email" required><br>
+              <input id="email" type="email" name="user_email" placeholder="Enter your Email" ><br>
 
-              <label for="topic">Topic:</label>
-              <input id="topic" type="text" name="user_topic" placeholder="Topic" required><br>
+              <label for="phone">Phone Number:</label>
+              <input id="phone" type="tel" name="user_phone" placeholder="Enter your phone number"><br>
               
               <label for="comments">Message:</label>
               <textarea id="comments" name="user_comments" placeholder="Type your message here"></textarea>
@@ -74,19 +97,22 @@
               
             </form>
           </div>
-      </div>
+      
    </main>
 
 
    <footer>
       <div class="footer">
       
-        <a href="https://www.facebook.com/fatima.faisal.5" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://instagram.com/fatimfaisal?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="https://github.com/Faisal-Fatima" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.facebook.com/fatima.faisal.5" title ="This is a link to my facebook page" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://instagram.com/fatimfaisal?igshid=ZDdkNTZiNTM=" title ="This is a link to my instagram page" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="#" title ="I have not linked my twitter account"><i class="fa fa-twitter"></i></a>
+        <a href="https://github.com/Faisal-Fatima" title ="This is a link to my github profile" target="_blank"><i class="fa fa-github"></i></a>
       </div>
    </footer>
-
+    <script src="app.js"></script>
+     <script src="menu.js"></script>
+     
+     
   </body>
 </html>

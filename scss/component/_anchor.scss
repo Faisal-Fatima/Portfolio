@@ -1,0 +1,15 @@
+a{
+    display: inline;
+    text-decoration:none;
+    color:inherit;
+    font-size: 1em;
+    color: $font;
+      }
+  
+  a:hover,
+  a:focus{
+      color:$a-focus;
+    }
+  
+  
+  
