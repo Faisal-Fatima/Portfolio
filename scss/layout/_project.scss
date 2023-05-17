@@ -1,20 +1,51 @@
+.portfolio {
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  
+ }
+ .port.education,.languages{
+  max-width : 100%;
+ }
+.port{
+  color: $font;
+  padding-top:1.5em;
+  padding-bottom: 1em;
+font-size: 0.7em;
+}
+.port p{
+color: black;
+}
+ .education p,
+ .languages li
+  {
+      font-size: 0.7em;
+list-style: circle;
+  }
+  h5{
+    padding-top:0.7em;
+    
+  }
+  h6{
+    padding-bottom:0.5em;
+  }
+
 
 .projects{
   padding-top: 1.5em;
-  text-align: center;
   color: $font-main;
-  
-  
+  text-align: center;
+  padding-bottom: 1em;
 }
+
+
 .pic-ctn {
   position: relative;
   height: 300px;
   margin-top: 3em;
-  
- 
-}
-
-
+ }
 
 .pic-ctn > img {  
   position: absolute;
@@ -55,5 +86,3 @@ img:nth-child(3) {
 img:nth-child(4) {
   animation-delay: 6s;
 }
-
-

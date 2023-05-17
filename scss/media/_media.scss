@@ -1,69 +1,90 @@
 @media screen and (min-width:576px) and (max-width: 767px){
 
-    .menu a{
-      font-size: 0.5em;
-      padding-bottom: 1.3em;
+  .menu a{
+    font-size: 0.5em;
+    padding-bottom: 1.3em;
 
-    }
   }
-  @media(min-width:768px)and (max-width:991px){
-     .hamburger-menu{
-      display: none;
-    }
-    .menu{
-      left:0;
-    }
-    .menu a{
-
-      font-size: 0.6em;
-      padding-bottom: 1.4em;
-    }
-    .welcome h1{
-      font-size: 2em;
-    }
-    .welcome p{
-      font-size: 0.85em;
-    }
-    .about,
-    .scheme{
-      padding-left: 0.5%;
-
-    }
+}
+@media(min-width:768px)and (max-width:991px){
+   .hamburger-menu{
+    display: none;
   }
-  @media(min-width:992px){
+  .menu{
+    left:0;
+  }
+  .menu a{
 
-    .navbar{
-      max-width: 10%;
-    
-    }
-    .hamburger-menu{
-      display: none;
-    }
-    .menu{
-      left:0;
-    }
-    .menu a{
+    font-size: 0.6em;
+    padding-bottom: 1.4em;
+  }
+  .welcome h1{
+    font-size: 2em;
+  }
+  .welcome p{
+    font-size: 0.85em;
+  }
+  .about,
+  .scheme{
+    padding-left: 0.5%;
 
-      font-size: 0.6em;
-      padding-bottom: 1.4em;
-    }
+  }
+  .portfolio{
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
     
-    .main-wrapper,
-    .about,
-    .scheme{
-      margin-left: 10%;
-    }
-    
-    .welcome h1{
-        font-size: 2.5em;
-      }
-      .welcome p{
-        font-size: 1em;
-      }
-    .about,
-    .scheme{
-      padding-left: 0.5%;
+   }
+   .port, .education,.languages{
+    max-width : calc(100%/3);
+   }
+}
+@media(min-width:992px){
 
-    }
+  .navbar{
+    max-width: 10%;
+  
+  }
+  .hamburger-menu{
+    display: none;
+  }
+  .menu{
+    left:0;
+  }
+  .menu a{
+
+    font-size: 0.6em;
+    padding-bottom: 1.4em;
   }
   
+  .main-wrapper,
+  .about,
+  .scheme{
+    margin-left: 10%;
+  }
+  
+  .welcome h1{
+      font-size: 2.5em;
+    }
+    .welcome p{
+      font-size: 1em;
+    }
+  .about,
+  .scheme{
+    padding-left: 0.5%;
+
+  }
+  .portfolio{
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    
+   }
+   .port, .education,.languages{
+    max-width : calc(100%/3);
+}
+}
