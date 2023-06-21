@@ -18,16 +18,6 @@ body {
   background-color: #bbb872;
 }
 
-.main-wrapper,
-.about,
-.scheme {
-  min-height: 100%;
-  max-height: 100%;
-  position: relative;
-  margin-left: 15%;
-  z-index: 1;
-}
-
 a {
   display: inline;
   text-decoration: none;
@@ -41,21 +31,24 @@ a:focus {
   color: #8b1a34;
 }
 
-.navbar {
-  max-width: 15%;
-  position: fixed;
-  margin: 0px;
-  padding: 0;
-  z-index: 30;
-  overflow: auto;
-  background-color: #bbb872;
+#logo {
+  float: left;
 }
 
-.navbar img {
-  padding: 0;
-  max-width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+nav img {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  max-width: 120px;
+  max-height: 90px;
+  display: inline-block;
+}
+
+nav menu,
+.hamburger-menu {
+  float: right;
+  line-height: 80px;
+  margin-top: 15px;
+  margin-right: 1em;
 }
 
 .hamburger-menu {
@@ -106,8 +99,20 @@ a:focus {
 
 .menu {
   position: fixed;
-  left: -25%;
-  transition: left 0.5s;
+  right: -85%;
+  transition: right 0.5s;
+  margin-right: 3em;
+  margin-top: 3em;
+}
+
+.menu ul {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu li {
+  display: inline;
+  font-size: 1em;
 }
 
 .menu a,
@@ -116,14 +121,18 @@ a:focus {
   padding-top: 0.3em;
   padding-left: 0.5em;
   padding-bottom: 1em;
-  display: block;
   text-decoration: none;
-  font-size: 0.4em;
+  font-size: 0.6em;
   font-weight: bold;
 }
 
+.menu a {
+  display: inline;
+  font-size: 0.7em;
+}
+
 .menu.active {
-  left: 0;
+  right: 0;
 }
 
 .menu a:hover {
@@ -131,7 +140,7 @@ a:focus {
 }
 
 .welcome {
-  background-image: url("../back1.jpg");
+  background-image: url("../banner.jpg");
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -145,6 +154,8 @@ a:focus {
   flex: 1;
   color: #8b1a34;
   font-weight: bolder;
+  background-color: rgba(59, 121, 33, 0.5);
+  box-shadow: inset 0 0 0 50vw rgba(188, 183, 36, 0.3);
 }
 
 .welcome h1 {
@@ -209,7 +220,7 @@ a:focus {
 }
 
 .portfolio {
-  margin-left: 15%;
+  margin-left: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -225,6 +236,10 @@ a:focus {
   padding-top: 1.5em;
   padding-bottom: 1em;
   font-size: 0.7em;
+}
+
+.port h3 {
+  font-size: 2.1em;
 }
 
 .port p {
@@ -253,51 +268,15 @@ h6 {
 }
 
 .pic-ctn {
-  position: relative;
   height: 300px;
   margin-top: 3em;
 }
 
 .pic-ctn > img {
-  position: absolute;
+  display: block;
   top: 0;
-  left: calc(50% - 70px);
-  opacity: 0;
-  animation: display 8s infinite;
-}
-
-@keyframes display {
-  0% {
-    transform: translateX(50%);
-    opacity: 0;
-  }
-  10% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  20% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  30% {
-    transform: translateX(-20%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-50%);
-    opacity: 0;
-  }
-}
-img:nth-child(2) {
-  animation-delay: 2s;
-}
-
-img:nth-child(3) {
-  animation-delay: 4s;
-}
-
-img:nth-child(4) {
-  animation-delay: 6s;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .enquiry h3 {
@@ -305,23 +284,55 @@ img:nth-child(4) {
   margin-top: 5em;
   text-align: center;
   font-size: 0.8em;
+  margin-bottom: 0.5em;
 }
 
-#enquiry-form {
+.container {
   border: 3px solid #8b1a34;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 15px;
-  padding: 10px;
+  padding: 5px;
   text-align: left;
-  font-size: 0.6em;
+  font-size: 0.7em;
   box-shadow: inset 9px 8px 10px -10px #8b1a34;
 }
 
-#name, #email, #phone, #comments {
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brand {
+  text-align: center;
+}
+
+.info p, .info li {
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.2em;
+}
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label {
   display: block;
-  min-width: 30%;
-  padding: 10px;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1/3;
+}
+
+.contact form button, .contact form input, .contact form textarea {
+  width: 100%;
+  padding: 1em;
   margin: 5px 0;
   outline: none;
   -webkit-user-select: none;
@@ -332,18 +343,30 @@ img:nth-child(4) {
   background-color: antiquewhite;
 }
 
-#comments {
-  width: 100%;
-  resize: vertical;
-}
-
 #submit {
   background-color: #8b1a34;
-  width: 70px;
+  color: antiquewhite;
+  background-color: #8b1a34;
+  width: 8em;
   display: block;
   font-size: 1.25em;
   padding: 5px;
   margin: 0 auto;
+}
+
+#submit:hover, #submit:focus {
+  background: #4d4d64;
+  outline: 0;
+  transition: background-color 0.5 s ease-out;
+}
+
+.Thankyou {
+  display: none;
+}
+
+#errors {
+  font-weight: bold;
+  padding-top: 1em;
 }
 
 .footer {
@@ -352,6 +375,7 @@ img:nth-child(4) {
   width: 100%;
   padding: 0.6% 0%;
   font-size: 0.8em;
+  z-index: 9999;
 }
 
 .footer a {
@@ -362,7 +386,7 @@ img:nth-child(4) {
 }
 
 .footer a:hover {
-  color: #4d4d64;
+  color: #8b1a34;
 }
 
 .about,
@@ -377,6 +401,7 @@ img:nth-child(4) {
   font-size: 0.9em;
   margin-bottom: 0.5em;
   color: #8b1a34;
+  margin-top: 15%;
 }
 
 .about p,
@@ -402,13 +427,146 @@ h1 {
   font-size: 1.5em;
 }
 
+@media screen and (min-width: 650px) {
+  .main-wrapper,
+  .about,
+  .scheme {
+    min-height: 100%;
+    max-height: 100%;
+    position: relative;
+    margin-left: 15%;
+    z-index: 1;
+    margin-top: 0;
+  }
+  .about h2,
+  .scheme h2 {
+    margin-top: 1%;
+  }
+  .navbar {
+    max-width: 15%;
+    position: fixed;
+    padding: 0;
+    overflow: auto;
+    background-color: #bbb872;
+  }
+  .navbar img {
+    padding: 0;
+    padding-top: 1em;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+    max-width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .hamburger-menu {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+  }
+  .ham-bar {
+    width: 50%;
+    height: 0.2rem;
+    background-color: #8b1a34;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 1s, opacity 0.8s, top 0.6s;
+  }
+  .bar-top {
+    top: 25%;
+  }
+  .bar-bottom {
+    top: 75%;
+  }
+  .hamburger-menu.active .bar-top {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+  }
+  .hamburger-menu.active .bar-mid {
+    opacity: 0;
+  }
+  .hamburger-menu.active .bar-bottom {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+  }
+  .navbar li {
+    list-style-type: none;
+  }
+  .menu {
+    position: fixed;
+    left: -50%;
+    transition: left 0.5s;
+    margin-top: 9em;
+    max-width: 15%;
+  }
+  .menu ul {
+    display: block;
+  }
+  .menu li {
+    margin-top: 0;
+    display: list-item;
+  }
+  .menu a {
+    display: none;
+  }
+  .menu a,
+  .back {
+    margin: 0;
+    padding-top: 0.3em;
+    padding-left: 0.5em;
+    padding-bottom: 1em;
+    display: block;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+  .menu.active {
+    left: 0;
+  }
+  .menu a:hover {
+    border-bottom: 1px solid #8b1a34;
+  }
+  .portfolio {
+    margin-left: 19%;
+  }
+  form {
+    z-index: 99;
+  }
+  .container {
+    width: 70%;
+  }
+  .enquiry {
+    margin-left: 3%;
+  }
+  footer {
+    z-index: 99;
+  }
+}
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .menu a {
-    font-size: 0.5em;
+    font-size: 0.7em;
     padding-bottom: 1.3em;
   }
 }
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .wrapper > * {
+    padding: 2em;
+  }
+  .info p, .info ul, .brand {
+    text-align: left;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
+  .welcome {
+    box-shadow: none;
+  }
   .hamburger-menu {
     display: none;
   }
@@ -416,7 +574,7 @@ h1 {
     left: 0;
   }
   .menu a {
-    font-size: 0.6em;
+    font-size: 0.8em;
     padding-bottom: 1.4em;
   }
   .welcome h1 {
@@ -441,8 +599,22 @@ h1 {
   }
 }
 @media (min-width: 992px) {
+  .welcome {
+    box-shadow: none;
+  }
+  .main-wrapper,
+  .about,
+  .scheme {
+    margin-left: 12%;
+    z-index: 1;
+    margin-top: 0;
+  }
+  .about h2,
+  .scheme h2 {
+    margin-top: 1%;
+  }
   .navbar {
-    max-width: 10%;
+    max-width: 12%;
   }
   .hamburger-menu {
     display: none;
@@ -451,13 +623,8 @@ h1 {
     left: 0;
   }
   .menu a {
-    font-size: 0.6em;
+    font-size: 0.8em;
     padding-bottom: 1.4em;
-  }
-  .main-wrapper,
-  .about,
-  .scheme {
-    margin-left: 10%;
   }
   .welcome h1 {
     font-size: 2.5em;
@@ -470,7 +637,7 @@ h1 {
     padding-left: 0.5%;
   }
   .portfolio {
-    margin-left: 15%;
+    margin-left: 12%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -478,5 +645,8 @@ h1 {
   }
   .port, .education, .languages {
     max-width: 33.3333333333%;
+  }
+  .enquiry {
+    margin-left: 1%;
   }
 }/*# sourceMappingURL=applications.css.map */

@@ -3,6 +3,7 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Embark on a journey of growth with Fatima Faisal, a passionate beginner in web development.">
       <link rel=”stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,22 +11,22 @@
       <link rel="stylesheet" href="normalize.css">
       <link rel="stylesheet" href="scss/applications.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
       
-    
+      
       <title>Portfolio</title>
  </head>
 
   <body>
-
+    
+    <nav>
     <div class="navbar">
      
-      <header>
-        
-        
-        <img id="logo" src="Fatima.png" alt="Name initial logo">
+        <img id="logo" src="Fatima.png" alt="Name initial logo"> 
       
-      
-        <nav>
           <div class="hamburger-menu">
             <div class="ham-bar bar-top"></div>
             <div class="ham-bar bar-mid"></div>
@@ -39,10 +40,10 @@
             <li> <a href="SCS-Scheme.html" target="_self">SCS Scheme</a></li>
             <li> <a href="index.html#contact">Contact Me</a> </li>
           </ul>   
-        </nav>    
-      </header>
+           
+      
     </div>
-
+  </nav> 
     <main>
       
 
@@ -94,43 +95,78 @@
             <h2 class="projects"> Projects</h2>
 
              <div class="pic-ctn" >
-            
-                <img src="Project1.jpg" alt="dark wall with glowing lamp and coming soon text" class="pic">
+      
+                
                 <img src="Project.jpg" alt="dark wall with glowing lamp and coming soon text" class="pic">
-                <img src="Project1.jpg" alt="dark wall with glowing lamp and coming soon text" class="pic">
-                <img src="Project.jpg" alt="dark wall with glowing lamp and coming soon text" class="pic">
+              
                 
               </div>
               
           </div>
         
         
-       
+  
+         <div class="enquiry" id="contact">
+          <h3>Thank you for visiting my portfolio!</h3>
           
-          <div class="enquiry" id="contact">
-
-            <h3>Please feel free to contact me for any queries</h3>
-            <form id="enquiry-form">
+          <div class="container">
+           
+            <div class='wrapper animated bounceInLeft'>
+            <div class = "info">
+                
+                <p> If you have any inquiries, collaboration opportunities, or if you'd like to discuss a potential project, please don't hesitate to get in touch. I'll do my best to respond promptly.
+                  I look forward to connecting with you!</p>
+                <ul>
+                 
+                  <li><i class="fa fa-phone"></i>    07976758155</li>
+                  <li><i class="fa fa-envelope"></i>   fatima_el_105@yahoo.com</li>
+                </ul>
+            </div>
+            
+            <div class='contact'>
+              
+              <form action="mailto:fatima_el_105@yahoo.com" class="form" name="myform" id="form">
+               
+                <p>
+                  <label for="fname">First Name* :</label>
+                  <input id="fname" type="text" name="first_name" required>
+                </p>
         
+                <p>
+                  <label for="lname">Last Name* :</label>
+                  <input id="lname" type="text" name="last_name" required>
+                </p>
         
-
-              <label for="name">Name* :</label>
-              <input id="name" type="text" name="user_name" placeholder="Enter your Name" ><br>
+                <p>
+                  <label for = "email">Email Adress* :</label>
+                  <input id="email" type="email" name="user_email" pattern=".*@.*\..*" required>
+                </p>
+        
+                <p>
+                  <label for="phone">Phone Number :</label>
+                  <input id="phone" type="tel" name="user_phone"> 
+                </p>
+        
+                <p class='full'>
+                  <label for="comments">Message :</label>
+                  <textarea id="comments" name="user_comments" placeholder="Type your message here"></textarea>
+                
+                </p>
+        
+                <p class='full'>
               
-              <label for="email">Email* :</label>
-              <input id="email" type="email" name="user_email" placeholder="Enter your Email" ><br>
-
-              <label for="phone">Phone Number :</label>
-              <input id="phone" type="tel" name="user_phone" placeholder="Enter your phone number"><br>
+                  <input type="button" id="submit" value="Submit" onclick="return validation();">
+                </p>
+              </form>
+              <div id ="errors"></div>
+              <div class="Thankyou" id="thanks">
+                <h2> I will reply back as soon as possible</h2>
               
-              <label for="comments">Message :</label>
-              <textarea id="comments" name="user_comments" placeholder="Type your message here"></textarea>
-              
-              <button id="submit" type="submit">Submit</button>
-              
-            </form>
+              </div>
           </div>
-      
+          </div>
+          </div>
+
    </main>
 
 
@@ -143,6 +179,7 @@
         <a href="https://github.com/Faisal-Fatima" title ="GitHub" target="_blank"><i class="fa fa-github"></i></a>
       </div>
    </footer>
+  
     <script src="app.js"></script>
      <script src="menu.js"></script>
      

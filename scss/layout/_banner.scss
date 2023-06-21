@@ -1,5 +1,5 @@
 .welcome{
-    background-image:url("../back1.jpg");
+    background-image:url("../banner.jpg");
     display:flex;
     flex-direction:column;
     background-repeat: no-repeat;
@@ -13,6 +13,8 @@
     flex: 1;
     color: $font-main;
     font-weight: bolder;
+    background-color: rgba(59, 121, 33, 0.5);
+    box-shadow: inset 0 0 0 50vw rgba(188, 183, 36, 0.3);
   }
   .welcome h1{
    padding-top: 2em;
