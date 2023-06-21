@@ -67,19 +67,22 @@ nav menu,
 }
 .menu{
   position: fixed;
-  right : -100%;
+  right : -75%;
   transition: right .5s;
   margin-right: 3em;
   margin-top: 3em;
+  width:50%;
+  z-index: 15;
+ background: $background;
   
 }
 .menu ul{
-  display: inline-block;
+ // display: inline-block;
   vertical-align: top;
 }
 .menu li{
   //margin-top:3.5em;
-  display: inline;
+ // display: inline;
   font-size: 1em;
 }
   .menu a,
@@ -90,23 +93,15 @@ nav menu,
     padding-left:0.5em;
     padding-bottom: 1em;
     text-decoration:none;
-    font-size: .6em;
+    font-size: .7em;
     font-weight: bold;
-    
-    
+   
 } 
-.menu a{
-  //margin-top:3.5em;
-  display: inline;
-  font-size: 0.7em;
-}
-.menu.active {
-  right:0;
-}
-.menu a:hover{
 
- border-bottom: 1px solid $a-focus;
+.menu.active {
+  left:50%;
 }
+
 
 
  
