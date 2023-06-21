@@ -99,19 +99,20 @@ nav menu,
 
 .menu {
   position: fixed;
-  right: -85%;
+  right: -75%;
   transition: right 0.5s;
-  margin-right: 3em;
+  margin-right: 1em;
   margin-top: 3em;
+  width: 70%;
+  z-index: 15;
+  background: #bbb872;
 }
 
 .menu ul {
-  display: inline-block;
   vertical-align: top;
 }
 
 .menu li {
-  display: inline;
   font-size: 1em;
 }
 
@@ -122,21 +123,12 @@ nav menu,
   padding-left: 0.5em;
   padding-bottom: 1em;
   text-decoration: none;
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-weight: bold;
 }
 
-.menu a {
-  display: inline;
-  font-size: 0.7em;
-}
-
 .menu.active {
-  right: 0;
-}
-
-.menu a:hover {
-  border-bottom: 1px solid #8b1a34;
+  left: 50%;
 }
 
 .welcome {

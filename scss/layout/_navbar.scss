@@ -71,18 +71,19 @@ nav menu,
   transition: right .5s;
   margin-right: 1em;
   margin-top: 3em;
-  width:50%;
-  z-index: 15;
+  width:70%;
+ z-index: 15;
  background: $background;
   
 }
 .menu ul{
  // display: inline-block;
   vertical-align: top;
+ // max-width:100%;
 }
 .menu li{
   //margin-top:3.5em;
- // display: inline;
+  //display: inline;
   font-size: 1em;
 }
   .menu a,
@@ -95,13 +96,13 @@ nav menu,
     text-decoration:none;
     font-size: .7em;
     font-weight: bold;
-   
+    
+    
 } 
 
 .menu.active {
   left:50%;
 }
-
 
 
  
