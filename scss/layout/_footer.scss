@@ -4,6 +4,8 @@
     width:100%;
     padding:0.6% 0%;
     font-size:0.8em;
+    z-index: 9999;
+    //position:fixed;
     
   }
     .footer a{
@@ -14,6 +16,6 @@
     
     }
     .footer a:hover{
-      color:$font;
+      color:$font-main;
     }
   
