@@ -10,6 +10,10 @@
       z-index: 1;
       margin-top: 0;
   }
+  .about, 
+  .scheme{
+    padding-left: 5%;
+  }
   .about h2,
 .scheme h2{
  
@@ -214,11 +218,7 @@ footer{
   .welcome p{
     font-size: 0.85em;
   }
-  .about,
-  .scheme{
-    padding-left: 1%;
-
-  }
+  
   .portfolio{
     margin-left: 15%;
     display: flex;
@@ -277,12 +277,7 @@ min-width:12%;
     .welcome p{
       font-size: 1em;
     }
-  .about,
-  .scheme{
-    padding-left: 1%;
-    //margin-left:1%;
-
-  }
+  
   .portfolio{
     margin-left: 12%;
     display: flex;

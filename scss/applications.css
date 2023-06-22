@@ -412,22 +412,22 @@ h6 {
 .scheme {
   padding-top: 5%;
   padding-right: 5%;
-  padding-left: 2%;
+  padding-left: 5%;
 }
 
 .about h2,
 .scheme h2 {
-  font-size: 0.9em;
+  font-size: 1.1em;
   margin-bottom: 0.5em;
   color: #8b1a34;
-  margin-top: 15%;
+  margin-top: 20%;
 }
 
 .about p,
 .scheme p,
 .scheme li {
   padding-bottom: 2%;
-  font-size: 0.7em;
+  font-size: 0.9em;
   list-style: circle;
 }
 
@@ -456,6 +456,10 @@ h1 {
     margin-left: 15%;
     z-index: 1;
     margin-top: 0;
+  }
+  .about,
+  .scheme {
+    padding-left: 5%;
   }
   .about h2,
   .scheme h2 {
@@ -613,10 +617,6 @@ h1 {
   .welcome p {
     font-size: 0.85em;
   }
-  .about,
-  .scheme {
-    padding-left: 1%;
-  }
   .portfolio {
     margin-left: 15%;
     display: flex;
@@ -665,10 +665,6 @@ h1 {
   }
   .welcome p {
     font-size: 1em;
-  }
-  .about,
-  .scheme {
-    padding-left: 1%;
   }
   .portfolio {
     margin-left: 12%;
