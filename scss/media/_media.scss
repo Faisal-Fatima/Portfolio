@@ -17,14 +17,14 @@
 }
   .navbar{
     max-width: 15%;
-   //height: 100vh;
+   height: 100vh;
     position:fixed;
    // margin:0px;
     padding:0;
    //z-index: 0;
     overflow: auto;
     background-color:$background;
-   // box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   }
   
  
@@ -98,15 +98,16 @@
  .menu ul{
   //margin-top: 16em;
   display:block;
+  //max-width: 15%;
   
  }
  .menu li{
   margin-top: 0;
   display: list-item;
-  //max-width: 15%
+  //max-width: 50%;
  }
  .menu a{
-  //max-width: 15%;
+  //max-width: 60%;
   display: none;
  }
    .menu a,
@@ -121,10 +122,24 @@
      font-size: .7em;
      font-weight: bold;
  } 
-    
+ .navbar.active{
+  //position:fixed;
+  min-width: 15%;
+  height: 100vh;
+  background:$background;
+ // z-index:999;
+ box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+ }
  .menu.active {
    left:0;
+    max-width:15%;
+    //height: 100vh;
+   margin-top:140px;
+   //position:sticky;
+   font-size: 1.1em;
+  // box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
  }
+ 
  .menu a:hover{
  
   border-bottom: 1px solid $a-focus;
@@ -201,7 +216,7 @@ footer{
   }
   .about,
   .scheme{
-    padding-left: 0.5%;
+    padding-left: 1%;
 
   }
   .portfolio{
@@ -236,7 +251,12 @@ footer{
  margin-top: 1%;
 }
   .navbar{
+    
+min-width:12%;
     max-width: 12%;
+  }
+  .menu{
+    max-width:12%;
   }
   .hamburger-menu{
     display: none;
@@ -259,7 +279,8 @@ footer{
     }
   .about,
   .scheme{
-    padding-left: 0.5%;
+    padding-left: 1%;
+    //margin-left:1%;
 
   }
   .portfolio{

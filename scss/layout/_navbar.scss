@@ -3,6 +3,7 @@
   float:left;
 
 }
+
 nav img{
   padding-top: 1em;
   padding-bottom: 1em;
@@ -67,12 +68,12 @@ nav menu,
 }
 .menu{
   position: fixed;
-  right : -75%;
+  right : -175%;
   transition: right .5s;
   margin-right: 1em;
   margin-top: 3em;
 
-  width:70%;
+ width:100%;
 
  z-index: 15;
  background: $background;
@@ -84,7 +85,7 @@ nav menu,
  // max-width:100%;
 }
 .menu li{
-  //margin-top:3.5em;
+  margin-top: 1em;
   //display: inline;
   font-size: 1em;
 }
@@ -101,9 +102,39 @@ nav menu,
     
     
 } 
+.menu a
+  {
+   
+    margin:0;
+    padding-top: 1em;
+    padding-left:0.5em;
+    padding-bottom: 1em;
+    text-decoration:none;
+    font-size: .7em;
+    font-weight: bold;
+    
+    
+} 
 
 .menu.active {
-  left:50%;
+  left:0%;
+  //min-width:100%;
+  //height: 100vh;
+  margin-top:90px;
+ //position:sticky;
+ font-size: 2em;
+ 
 }
-
+.navbar.active{
+  position:fixed;
+  min-width:100%;
+  height: 100vh;
+  background:$background;
+  z-index:999;
+}
+.menu a:hover{
+ 
+  border-bottom: 1px solid $a-focus;
+  
+ }
 
