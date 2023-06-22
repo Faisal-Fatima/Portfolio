@@ -2,24 +2,24 @@
 .scheme{
 padding-top:5%;
 padding-right:5%;
-padding-left: 2%;
+padding-left: 5%;
 
 
 }
 
 .about h2,
 .scheme h2{
- font-size: .9em;
+ font-size: 1.1em;
  margin-bottom: 0.5em;
  color: $font-main;
- margin-top: 15%;
+ margin-top: 20%;
 }
 
 .about p,
 .scheme p,
 .scheme li{
   padding-bottom: 2%;
-  font-size: 0.7em;
+  font-size: 0.9em;
   list-style: circle;
 }
 
