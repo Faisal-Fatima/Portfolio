@@ -289,11 +289,31 @@ h6 {
   margin-top: 3em;
 }
 
-.pic-ctn > img {
+.pic-ctn > img,
+.pic-ctn > a {
   display: block;
   top: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure.item {
+  top: 0;
+  display: inline-block;
+  /* To horizontally center images and caption */
+  text-align: center;
+  /* The width of the container also implies margin around the images. */
+}
+
+.caption {
+  /* Make the caption a block so it occupies its own line. */
+  display: block;
 }
 
 .enquiry h3 {
@@ -415,12 +435,24 @@ h6 {
   padding-left: 5%;
 }
 
+.about h1 {
+  margin-top: 10%;
+  padding-right: 0;
+  text-align: center;
+}
+
 .about h2,
 .scheme h2 {
-  font-size: 1.1em;
+  font-size: 1.3em;
   margin-bottom: 0.5em;
   color: #8b1a34;
-  margin-top: 20%;
+  margin-top: 2%;
+}
+
+.about h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
 }
 
 .about p,
@@ -460,6 +492,9 @@ h1 {
   .about,
   .scheme {
     padding-left: 5%;
+  }
+  .about h1 {
+    margin-top: 1%;
   }
   .about h2,
   .scheme h2 {
@@ -659,6 +694,9 @@ h1 {
   .menu a {
     font-size: 0.8em;
     padding-bottom: 1.4em;
+  }
+  nav ul li:hover > .subnav {
+    display: block;
   }
   .welcome h1 {
     font-size: 2.5em;
