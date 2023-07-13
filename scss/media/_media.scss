@@ -13,6 +13,10 @@
   .about, 
   .scheme{
     padding-left: 5%;
+
+  }
+  .about h1{
+    margin-top: 1%;
   }
   .about h2,
 .scheme h2{
@@ -269,6 +273,14 @@ min-width:12%;
     font-size: 0.8em;
     padding-bottom: 1.4em;
   }
+  
+  nav ul li:hover > .subnav {
+    display: block;
+  }
+  
+  
+  
+  
   
   
   .welcome h1{

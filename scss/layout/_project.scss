@@ -53,7 +53,9 @@ list-style: circle;
   margin-top: 3em;
  }
 
-.pic-ctn > img {  
+
+.pic-ctn>img,
+.pic-ctn>a{  
   //position: absolute;
   display: block;
   top: 0;
@@ -95,3 +97,25 @@ list-style: circle;
 // img:nth-child(4) {
 //   animation-delay: 6s;
 // }
+.centre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure.item {
+  
+  top: 0;
+  display: inline-block;
+  /* To horizontally center images and caption */
+  text-align: center;
+  /* The width of the container also implies margin around the images. */
+  // width: 180px;
+}
+
+.caption {
+  /* Make the caption a block so it occupies its own line. */
+  display: block;
+  
+}
+
