@@ -13,3 +13,17 @@ hamMenu.addEventListener('click', ()=>{
 logo.addEventListener("click", function(){
   document.location.href = 'index.html';
 });
+
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("navbar");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.scrollY > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}

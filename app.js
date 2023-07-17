@@ -80,7 +80,7 @@ function ValidateEmail(input) {
 
 function validation(){ 
   if(document.myform.email.value == "" ||document.myform.fname.value == ""||document.myform.lname.value == ""){ 
-       document.getElementById('errors').innerHTML="It would be easier to contact you, if I have your name and valid emil address.";
+       document.getElementById('errors').innerHTML="It would be easier to contact you, if I have your name and valid email address.";
               
   }
   else if (!ValidateEmail(email)) {

@@ -156,6 +156,14 @@ nav menu,
   border-bottom: 1px solid #8b1a34;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #bbb872;
+  z-index: 3;
+}
+
 .welcome {
   background-image: url("../banner.jpg");
   display: flex;
@@ -172,7 +180,7 @@ nav menu,
   color: #8b1a34;
   font-weight: bolder;
   background-color: rgba(59, 121, 33, 0.5);
-  box-shadow: inset 0 0 0 50vw rgba(188, 183, 36, 0.3);
+  box-shadow: inset 0 0 0 50vw rgba(187, 184, 114, 0.7);
 }
 
 .welcome h1 {
@@ -227,10 +235,10 @@ nav menu,
 .scroll a span {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 48%;
   width: 24px;
   height: 24px;
-  margin-left: -12px;
+  margin-left: -10px;
   border-left: 1px solid #8b1a34;
   border-bottom: 1px solid #8b1a34;
   transform: rotate(-45deg);
@@ -478,6 +486,13 @@ h1 {
   font-size: 1.5em;
 }
 
+.coding-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 @media screen and (min-width: 650px) {
   .main-wrapper,
   .about,
@@ -564,6 +579,7 @@ h1 {
   }
   .menu ul {
     display: block;
+    align-items: center;
   }
   .menu li {
     margin-top: 0;
@@ -598,6 +614,9 @@ h1 {
   .menu a:hover {
     border-bottom: 1px solid #8b1a34;
   }
+  .projects, .centre {
+    margin-left: 15%;
+  }
   .portfolio {
     margin-left: 19%;
   }
@@ -605,10 +624,12 @@ h1 {
     z-index: 99;
   }
   .container {
-    width: 70%;
+    display: flex;
+    width: 80%;
+    justify-content: center;
   }
   .enquiry {
-    margin-left: 3%;
+    margin-left: 15%;
   }
   footer {
     z-index: 99;
@@ -642,8 +663,11 @@ h1 {
   .menu {
     left: 0;
   }
+  .menu li {
+    padding-left: 0.4em;
+  }
   .menu a {
-    font-size: 0.8em;
+    font-size: 0.7em;
     padding-bottom: 1.4em;
   }
   .welcome h1 {
@@ -652,8 +676,14 @@ h1 {
   .welcome p {
     font-size: 0.85em;
   }
-  .portfolio {
+  .projects {
     margin-left: 15%;
+  }
+  .centre {
+    margin-left: 15%;
+  }
+  .portfolio {
+    margin-left: 19%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -661,6 +691,9 @@ h1 {
   }
   .port, .education, .languages {
     max-width: 33.3333333333%;
+  }
+  .enquiry {
+    margin-left: 15%;
   }
 }
 @media (min-width: 992px) {
@@ -670,7 +703,7 @@ h1 {
   .main-wrapper,
   .about,
   .scheme {
-    margin-left: 12%;
+    margin-left: 11%;
     z-index: 1;
     margin-top: 0;
   }
@@ -679,17 +712,22 @@ h1 {
     margin-top: 1%;
   }
   .navbar {
-    min-width: 12%;
-    max-width: 12%;
+    min-width: 11%;
+    max-width: 11%;
+  }
+  .navbar img {
+    padding-right: 0.25em;
+    padding-left: 0.4em;
   }
   .menu {
-    max-width: 12%;
+    max-width: 11%;
+    left: 0;
   }
   .hamburger-menu {
     display: none;
   }
-  .menu {
-    left: 0;
+  .menu li {
+    padding-left: 0.6em;
   }
   .menu a {
     font-size: 0.8em;
@@ -714,7 +752,10 @@ h1 {
   .port, .education, .languages {
     max-width: 33.3333333333%;
   }
+  .projects, .centre {
+    margin-left: 12%;
+  }
   .enquiry {
-    margin-left: 1%;
+    margin-left: 12%;
   }
 }/*# sourceMappingURL=applications.css.map */

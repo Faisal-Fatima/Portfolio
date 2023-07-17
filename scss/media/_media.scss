@@ -45,6 +45,7 @@
    padding-left:0.2em;
   max-width: 100%;
    object-fit: contain;
+   
  }
  
  .hamburger-menu{
@@ -107,12 +108,14 @@
   //margin-top: 16em;
   display:block;
   //max-width: 15%;
+  align-items: center;
   
  }
  .menu li{
   margin-top: 0;
   display: list-item;
   //max-width: 50%;
+ // padding-left: 20px;
  }
  .menu a{
   //max-width: 60%;
@@ -152,20 +155,25 @@
  
   border-bottom: 1px solid $a-focus;
  }
-
+ .projects,.centre{
+  margin-left:15%;
+}
  .portfolio{
   margin-left: 19%;
  }
+
  form{
   z-index: 99;
  }
  .container{
-  
-   width:70%;
+  display: flex;
+   width:80%;
+   justify-content: center;
+   
  }
  .enquiry{
 
-  margin-left:3%;
+  margin-left:15%;
 }
 footer{
   z-index: 99;
@@ -211,9 +219,12 @@ footer{
    //margin-top: 3em;
     
   }
+  .menu li{
+    padding-left: .4em;
+  }
   .menu a{
   // max-width:8%;
-    font-size: 0.8em;
+    font-size: 0.7em;
     padding-bottom: 1.4em;
   }
   .welcome h1{
@@ -222,9 +233,14 @@ footer{
   .welcome p{
     font-size: 0.85em;
   }
-  
-  .portfolio{
+  .projects{
     margin-left: 15%;
+  }
+  .centre{
+    margin-left: 15%;
+  }
+  .portfolio{
+    margin-left: 19%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -234,7 +250,10 @@ footer{
    .port, .education,.languages{
     max-width : calc(100%/3);
    }
-   
+   .enquiry{
+
+    margin-left:15%;
+  }
   }
 
 @media(min-width:992px){
@@ -245,7 +264,7 @@ footer{
   .about, 
   .scheme{
      
-      margin-left: 12%;
+      margin-left: 11%;
       z-index: 1;
       margin-top: 0;
   }
@@ -256,17 +275,24 @@ footer{
 }
   .navbar{
     
-min-width:12%;
-    max-width: 12%;
-  }
+min-width:11%;
+    max-width: 11%;
+      }
+
+      .navbar img{
+        padding-right: 0.25em;
+        padding-left: 0.4em;
+      }
   .menu{
-    max-width:12%;
+    max-width:11%;
+    left:0;
   }
   .hamburger-menu{
     display: none;
   }
-  .menu{
-    left:0;
+  .menu li{
+  padding-left: 0.60em;
+  
   }
   .menu a{
     //max-width:6%;
@@ -301,8 +327,11 @@ min-width:12%;
    .port, .education,.languages{
     max-width : calc(100%/3);
 }
+.projects,.centre{
+  margin-left:12%;
+}
 .enquiry{
 
-  margin-left:1%;
+  margin-left:12%;
 }
 }
