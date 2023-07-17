@@ -10,6 +10,7 @@ nav img{
   max-width: 120px;
   max-height: 90px;
   display: inline-block;
+ 
   
 }
 nav menu,
@@ -137,4 +138,12 @@ nav menu,
   border-bottom: 1px solid $a-focus;
   
  }
+
+ .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $background;
+  z-index: 3;
+}
 
